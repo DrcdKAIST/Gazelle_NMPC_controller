@@ -1,0 +1,1 @@
+[q_target, pPEL] = IK_COM(x_target);
