@@ -1,3 +1,8 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Author: JongHun Choe (ksks6281@kaist.ac.kr, (or ksks6281@gmail.com))
+%%% Date: 2023. 05. 11. 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 %--- Path setting
 clc; clear all; close all;
 % restoredefaultpath;
@@ -16,7 +21,7 @@ step_time = 0.7;                % Step period
 L_or_R = 1;                     % First swing foot: 1: Left foot / -1: Right foot
 
 % Disturbance information
-Impact_force_x = 475;             % [N]: x-dir impact force
+Impact_force_x = 200;             % [N]: x-dir impact force
 Impact_force_y = 0;             % [N]: y-dir impact force
 Impact_duration = 0.05;         % [s]: Impact duration
 Impact_timing = 0.0;            % [s]: Timing of impact
@@ -26,7 +31,7 @@ Impact_step_number = 3;
 % [Impact_step_number]th step.
 
 % Flags
-flag_HORIZON_CHANGED = 0;       % Set to 1 if the number of MPC horizon is changed
+flag_HORIZON_CHANGED = 1;       % Set to 1 if the number of MPC horizon is changed
 flag_VISUALIZATION = 1;         % Set to 1 for graphic ON
 flag_VISUALIZATION_ROBOT = 1;   % Set to 1 to show robot
 flag_PLOT = 1;                  % Set to 1 to show plots
