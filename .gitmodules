@@ -1,0 +1,3 @@
+[submodule "qpSWIFT"]
+	path = qpSWIFT
+	url = git@github.com:qpSWIFT/qpSWIFT.git
